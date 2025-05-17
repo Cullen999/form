@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default async function handler(req, res) {
   if (req.method === "GET") {
-    res.send("Hey");
+    res.end("Hey");
     return;
   }
 
