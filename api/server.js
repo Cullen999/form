@@ -11,6 +11,11 @@ const CHAT_ID = "7378014336";
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
+
+app.get('/', (req, res) => {
+  res.send("Hey");
+})
 app.post("/", async (req, res) => {
   const { name, telegram, message } = req.body;
 
